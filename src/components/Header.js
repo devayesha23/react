@@ -39,11 +39,11 @@ export default function Header(props) {
                   <div className="flex space-x-4">
                   {  /* className={
                           classNames(
-                          item.current 
+                          item.current
                           ? 'no-underline'  
-                          : 'no-underline' 
+                          : 'no-underline'
                           ,
-                          
+                         
                           )}*/}
                     {navigation.map((item) => (
                       <NavLink
@@ -51,9 +51,9 @@ export default function Header(props) {
                         to ={item.href}
                           className = {({isActive}) => {
                             return (
-                              'px-3 py-2 rounded-md text-sm font-medium no-underline' + 
-                              (!isActive 
-                                ? 'text-gray-300 hover:bg-gray-700 hover:text-white no-underline' 
+                              'px-3 py-2 rounded-md text-sm font-medium no-underline' +
+                              (!isActive
+                                ? 'text-gray-300 hover:bg-gray-700 hover:text-white no-underline'
                                 : 'bg-gray-900 text-white no-underline')
                               );                      
                           }}
@@ -85,9 +85,9 @@ key={item.name}
 to ={item.href}
   className = {({isActive}) => {
     return (
-      'block px-3 py-2 rounded-md text-base font-medium no-underline' + 
-      (!isActive 
-        ? 'text-gray-300 hover:bg-gray-700 hover:text-white no-underline' 
+      'block px-3 py-2 rounded-md text-base font-medium no-underline' +
+      (!isActive
+        ? 'text-gray-300 hover:bg-gray-700 hover:text-white no-underline'
         : 'bg-gray-900 text-white no-underline')
       );                      
   }} >
@@ -96,13 +96,14 @@ to ={item.href}
               ))}
             </div>
           </Disclosure.Panel>
-        </> 
+        </>
       )}
     </Disclosure>
     <div className= "bg-gray-300">
-    <div className="bg-gray-300 min-h-screen px-2 py-2">{props.children}</div>
-    </div>
+    <div classNames="bg-purple-300 min-h-screen px-2 py-2">
+      {props.children}
+      </div>
+      </div>
     </>
-
   );
 }

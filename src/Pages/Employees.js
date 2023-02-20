@@ -62,7 +62,7 @@ function Employees() {
 
   const showEmployees = true;
   return (
-    <div className="bg-Appurple-300 min-h-screen px-2 py-">
+    <div className="bg-purple-300 min-h-screen px-3 py-3">
     
       {
       console.log('inside the return') }
