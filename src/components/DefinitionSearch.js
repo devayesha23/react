@@ -11,7 +11,7 @@ export default function DefinitionSearch(){
 
         onSubmit={()=>{
         
-        navigate('/definition/' + word);
+        navigate('/dictionary/' + word);
 
         }}
         >

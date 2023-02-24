@@ -11,8 +11,10 @@ import Customers from './Pages/Customers';
 import Dictionary from './Pages/Dictionary';
 import Definition from './Pages/Definition';
 import NotFound from './components/NotFound';
+import Customer from './Pages/Customer';
 
 function App() {
+
   return (
     
     <BrowserRouter>
@@ -27,6 +29,7 @@ function App() {
         element={<Definition/>}
         />
         <Route path="/customers" element={<Customers />} />
+        <Route path="/customers/:id" element={<Customer />} />
       </Routes>
     </BrowserRouter>
   );
